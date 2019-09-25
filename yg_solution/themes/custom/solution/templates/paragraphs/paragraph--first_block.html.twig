@@ -1,0 +1,18 @@
+<div class="container-fluid gtco-banner-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1> {{ content.field_title.0 }} </h1>
+                <p> {{ content.field_sub_tiltle.0 }} </p>
+                <a href="{{ content.field_button_link[0]['#url']|render }}">{{ content.field_button_link[0]['#title']|render }} <i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+            <div class="col-md-6">
+                <div class="card">
+
+                  <img class="card-img-top img-fluid" src="{{ file_url(content.field_image['#items'].entity.uri.value) }}" alt="{{ content.field_image['#items'].alt }}" title="{{ content.field_image['#items'].title }}">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

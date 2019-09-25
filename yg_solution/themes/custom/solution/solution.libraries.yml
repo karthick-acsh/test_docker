@@ -1,0 +1,35 @@
+global-styling:
+  version: VERSION
+  js:
+    js/popper.min.js: {}
+    js/global.js: {}
+    owl-carousel/owl.carousel.min.js: {}
+
+  css:
+    component:
+      css/style.css: {}
+      css/font-awesome.min.css: {}
+      owl-carousel/assets/owl.carousel.min.css: {}
+
+bootstrap:
+  js:
+    /libraries/popper/popper.min.js: {}
+    /libraries/bootstrap/dist/js/bootstrap.min.js: {}
+  css:
+    component:
+      /libraries/bootstrap/dist/css/bootstrap.min.css: {}
+bootstrap_cdn:
+  js:
+    //cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js: {}
+    //stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js: {}
+  css:
+    component:
+      //stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css: {}
+
+  dependencies:
+    - core/jquery 
+    - core/drupalSettings
+    - core/modernizr
+    - core/drupal
+    - core/drupal.ajax
+    - core/views.ajax

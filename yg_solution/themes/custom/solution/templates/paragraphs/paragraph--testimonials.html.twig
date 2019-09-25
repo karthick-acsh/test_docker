@@ -1,0 +1,8 @@
+<div class="card text-center">
+	<img class="card-img-top" src="{{ file_url(content.field_customer_image['#items'].entity.uri.value) }}" alt="{{ content.field_customer_image['#items'].alt }}" title="{{ content.field_customer_image['#items'].title }}">
+    <div class="card-body">
+        <h5>{{ content.field_customer_name.0 }}<br/>
+            <span> {{ content.field_customer_designation.0 }} </span></h5>
+        <p class="card-text">{{ content.field_customer_testimonial.0 }}</p>
+    </div>
+</div>
